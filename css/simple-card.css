@@ -1,3 +1,13 @@
+.simple-card .imgBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+
 .simple-card {
   position: relative;
   content: "aaaaaaaa";
@@ -9,16 +19,6 @@
 
 .simple-card:hover {
   border: 1px #017ecc solid;
-}
-
-.simple-card .imgBox {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 20px;
-  z-index: 1;
 }
 
 .simple-card .card-image {

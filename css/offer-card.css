@@ -1,9 +1,9 @@
 .offer-card {
   position: relative;
-
   height: 472px;
   background: #191919;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .offer-card::before {
