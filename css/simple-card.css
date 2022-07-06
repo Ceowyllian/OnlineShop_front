@@ -14,11 +14,12 @@
   height: 472px;
   background: #191919;
   overflow: hidden;
-  border: 1px white solid;
+  border: 2px #191919 solid;
+  border-radius: 10px;
 }
 
 .simple-card:hover {
-  border: 1px #017ecc solid;
+  border: 2px #017ecc solid;
 }
 
 .simple-card .card-image {
@@ -43,7 +44,7 @@
 
 .simple-card .contentBox .price {
   font-size: 24px;
-  color: white;
+  color: #bbbcc0;
   font-weight: 700;
   letter-spacing: 1px;
 }
