@@ -1,0 +1,9 @@
+.bestsellers .carousel-control {
+  width: 2rem;
+  border: none;
+}
+
+.bestsellers .btn {
+  font-size: 2em;
+  vertical-align: center;
+}

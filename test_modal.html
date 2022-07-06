@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <title>Modal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="img/bootstrap/bootstrap-icons.css" rel="stylesheet">
+  <script src="js/bootstrap/bootstrap.min.js"></script>
+  <link href="css/topnav.css" rel="stylesheet">
+  <link href="css/modal.css" rel="stylesheet">
+
+</head>
+<body>
+
+<header class="navbar sticky-top justify-content-center">
+  <div class="container-fluid justify-content-start">
+    <button class="btn me-3 ms-3 p-1 categories" data-bs-toggle="modal" data-bs-target="#categories">
+        <span class="bi bi-grid" style="color: #ff8800"></span> Categories
+    </button>
+  </div>
+</header>
+
+
+
+
+<div class="modal fade modal-xl" id="categories" tabindex="-1" aria-hidden="true">
+  <div class="modal-fullscreen modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content text-white">
+
+      <div class="modal-header">
+        <h5 class="modal-title">
+          <span class="bi bi-grid" style="color: #ff8800"></span>
+          Categories
+        </h5>
+        <button class="btn"><span class="bi bi-plus-square me-2"></span>Add</button>
+        <button class="btn close bi bi-x-square-fill p-0 me-2" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
