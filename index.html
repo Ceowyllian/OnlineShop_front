@@ -14,6 +14,7 @@
   <link href="css/topnav.css" rel="stylesheet">
   <link href="css/bestsellers.css" rel="stylesheet">
   <link href="css/simple-card.css" rel="stylesheet">
+  <link href="css/categories.css" rel="stylesheet">
 </head>
 <body>
 
@@ -63,12 +64,34 @@
 
 
 <!-- categories - offcanvas -->
-<div class="categories offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="categories" aria-labelledby="categories">
-  <div class="offcanvas-header">
-    <button type="button" class="btn bi bi-x-circle" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+<div class="categories-list offcanvas offcanvas-start bg-dark bg-opacity-75 w-25" data-bs-scroll="true"
+     tabindex="-1" id="categories" aria-labelledby="categories" data-bs-backdrop="static">
+  <div class="offcanvas-header bg-dark ">
+    <h2 class="text-white "><span class="bi bi-grid" style="color: #017ecc"></span> Categories</h2>
+    <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close">
+      <span class="bi bi-x-lg"></span>
+    </button>
   </div>
   <div class="offcanvas-body">
-
+    <ul class="list-group">
+      <li class="list-group-item"><a href="#">Blenders</a></li>
+      <li class="list-group-item"><a href="#">Coffee machines</a></li>
+      <li class="list-group-item"><a href="#">Conditioners</a></li>
+      <li class="list-group-item"><a href="#">Electric stoves</a></li>
+      <li class="list-group-item"><a href="#">Fridges</a></li>
+      <li class="list-group-item"><a href="#">Gas stoves</a></li>
+      <li class="list-group-item"><a href="#">Hoovers</a></li>
+      <li class="list-group-item"><a href="#">Kettles</a></li>
+      <li class="list-group-item"><a href="#">Laptops</a></li>
+      <li class="list-group-item"><a href="#">Microwaves</a></li>
+      <li class="list-group-item"><a href="#">Multicookers</a></li>
+      <li class="list-group-item"><a href="#">Robot cleaners</a></li>
+      <li class="list-group-item"><a href="#">Stereo</a></li>
+      <li class="list-group-item"><a href="#">Toasters</a></li>
+      <li class="list-group-item"><a href="#">Washing machines</a></li>
+      <li class="list-group-item"><a href="#">Water heaters</a></li>
+    </ul>
+    <div class="col"></div>
   </div>
 </div>
 
@@ -248,7 +271,7 @@
 <!-- bestsellers -->
 <section class="bestsellers mt-5 ps-3 pe-3">
   <div class="row">
-    <h3 class="text-white ps-5">Bestsellers</h3>
+    <h3 class="text-white ps-5"><span class="me-2 bi bi-star-fill" style="color: #017ecc"></span>Bestsellers</h3>
   </div>
   <div class="row justify-content-center">
       <button type="button" data-bs-target="#carousel-bestsellers" data-bs-slide="prev"
