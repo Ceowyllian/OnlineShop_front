@@ -4,10 +4,11 @@
 <meta charset="utf-8">
   <title>Shop</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
   <link href="img/bootstrap/bootstrap-icons.css" rel="stylesheet">
-  <script src="js/bootstrap/bootstrap.min.js"></script>
-  <link href="css/modal.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   <link href="css/content.css" rel="stylesheet">
   <link href="css/advertising.css" rel="stylesheet">
   <link href="css/offer-card.css" rel="stylesheet">
@@ -43,7 +44,7 @@
       <nav class="nav-links justify-content-center m-2 pt-1 pb-1">
         <div class="d-flex">
           <a class="nav-link me-3 ms-3 bi bi-chat-dots" href="#Contacts"></a>
-          <a class="nav-link me-3 ms-3 bi bi-cart" data-bs-toggle="modal" data-bs-target="#cart" href="#Cart"></a>
+          <a class="nav-link me-3 ms-3 bi bi-cart" href="#Cart"></a>
           <a class="nav-link me-3 ms-3 bi bi-star" href="#Wishlist"></a>
           <a class="nav-link me-3 ms-3 bi bi-person" href="#Account"></a>
         </div>
@@ -56,7 +57,7 @@
 <header class="b-nav navbar navbar-mobile fixed-bottom justify-content-center">
     <nav class="nav-links-mobile d-flex justify-content-center m-0 ms-1 me-1 p-0">
       <a class="nav-link me-3 ms-3 bi bi-chat-dots" href="#Contacts"></a>
-      <a class="nav-link me-3 ms-3 bi bi-cart" data-bs-toggle="modal" data-bs-target="#cart" href="#Cart"></a>
+      <a class="nav-link me-3 ms-3 bi bi-cart" href="#Cart"></a>
       <a class="nav-link me-3 ms-3 bi bi-star" href="#Wishlist"></a>
       <a class="nav-link me-3 ms-3 bi bi-person" href="#Account"></a>
     </nav>
@@ -95,98 +96,12 @@
   </div>
 </div>
 
-
-<!-- modal window - cart -->
-<div class="modal fade modal-xl" id="cart" tabindex="-1" aria-hidden="true"
-     data-bs-backdrop="static">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content text-white">
-
-      <div class="modal-header">
-        <h5 class="modal-title">
-          <span class="bi bi-cart" style="color: #017ecc"></span>
-          Cart
-        </h5>
-        <button type="button" class="btn close bi bi-x-square-fill p-0 me-2" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-
-
-      <div class="modal-body">
-          <div class="row">
-
-
-            <div class="col ">
-              <div class="alert col border-2 border-light alert-dismissible p-0">
-                <div class="row p-2 m-0">
-                  <div class="col-11 p-0">
-                    <h4>Electric stove</h4>
-                  </div>
-                  <div class="col-1 text-end">
-                    <button class="btn close text-end p-0 m-0 bi bi-x" data-bs-dismiss="alert"></button>
-                  </div>
-                </div>
-
-                <div class="row p-0 m-0">
-                  <div class="col">
-
-                  </div>
-                  <img class="col-1 p-3" src="img/appliances/electric_stove.png" alt="">
-                </div>
-              </div>
-
-              <div class="alert col border-2 border-light alert-dismissible p-0">
-                <div class="row p-2 m-0">
-                  <div class="col-11 p-0">
-                    <h4>Washing machine</h4>
-                  </div>
-                  <div class="col-1 text-end">
-                    <button class="btn close text-end p-0 m-0 bi bi-x" data-bs-dismiss="alert"></button>
-                  </div>
-                </div>
-
-                <div class="row p-0 m-0">
-                  <div class="col">
-
-                  </div>
-                  <img class="col-1 p-3" src="img/appliances/washing_machine.png" alt="">
-                </div>
-              </div>
-
-              <div class="alert col border-2 border-light alert-dismissible p-0">
-                <div class="row p-2 m-0">
-                  <div class="col-11 p-0">
-                    <h4>Water heater</h4>
-                  </div>
-                  <div class="col-1 text-end">
-                    <button class="btn close text-end p-0 m-0 bi bi-x" data-bs-dismiss="alert"></button>
-                  </div>
-                </div>
-
-                <div class="row p-0 m-0">
-                  <div class="col">
-
-                  </div>
-                  <img class="col-1 p-3" src="img/appliances/water_heater.png" alt="">
-                </div>
-              </div>
-
-            </div>
-
-        </div>
-      </div>
-      <div class="modal-footer row pb-1 pt-1">
-      </div>
-    </div>
-  </div>
-</div>
-
-
 <!-- advertising -->
 <section class="advertising p-3">
   <div class="row justify-content-center">
 
     <div class="p-0 m-2 col-6">
-      <div id="carousel-advertising" class="carousel slide col" data-bs-ride="false">
+      <div id="carousel-advertising" class="carousel slide col" data-bs-ride="false" data-bs-interval="15000">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carousel-advertising" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carousel-advertising" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -278,7 +193,7 @@
               class="col-1 text-white carousel-control bg-transparent btn p-0 m-0 bi bi-chevron-left">
       </button>
 
-      <div id="carousel-bestsellers" class="carousel slide col" data-bs-ride="carousel">
+      <div id="carousel-bestsellers" class="carousel slide col" data-bs-ride="carousel" data-bs-interval="20000">
 
         <div class="carousel-inner mb-5">
           <div class="carousel-item active">
