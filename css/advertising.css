@@ -23,3 +23,8 @@
   height: 472px;
   width: 750px;
 }
+
+.advertising-bottom .side-banner {
+  max-height: 317px;
+  width: auto;
+}

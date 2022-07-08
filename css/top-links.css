@@ -1,0 +1,10 @@
+.top-links a {
+  font-size: 1.1em;
+  color: #bbbcc0;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.top-links a:hover {
+  color: white;
+}

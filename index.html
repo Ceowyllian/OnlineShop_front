@@ -5,24 +5,38 @@
   <title>Shop</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="img/bootstrap/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <script src="js/bootstrap/bootstrap.min.js"></script>
   <link href="css/content.css" rel="stylesheet">
   <link href="css/advertising.css" rel="stylesheet">
   <link href="css/offer-card.css" rel="stylesheet">
+  <link href="css/top-links.css" rel="stylesheet">
   <link href="css/topnav.css" rel="stylesheet">
-  <link href="css/bestsellers.css" rel="stylesheet">
+  <link href="css/cards-carousel.css" rel="stylesheet">
   <link href="css/simple-card.css" rel="stylesheet">
   <link href="css/categories.css" rel="stylesheet">
+  <link href="css/advantages.css" rel="stylesheet">
 </head>
 <body>
 
 
+<!-- links above the top nav-->
+<header class="top-links container-fluid row mt-2 mb-2">
+  <div class="col-1 p-0">
+    <a class="bi bi-geo-alt mt-1 mb-1" href="#"> Delivery</a>
+  </div>
+  <div class="col-1 p-0">
+    <a class="bi bi-gift mt-1 mb-1" href="#"> Sales</a>
+  </div>
+  <div class="col-1 p-0">
+    <a class="bi bi-volume-up mt-1 mb-1" href="#"> Blog</a>
+  </div>
+</header>
+
+
 <!-- top navigation bar -->
-<header class="t-nav navbar sticky-top justify-content-center">
-  <div class="container-fluid justify-content-start">
+<header class="t-nav navbar sticky-top">
+  <div class="container-fluid">
       <img class="navbar-brand p-0 m-0" src="img/brand.png" alt="" width=45>
       <button class="btn me-3 ms-3 p-1 categories" data-bs-toggle="offcanvas" data-bs-target="#categories"
               aria-controls="categories">
@@ -96,6 +110,7 @@
   </div>
 </div>
 
+
 <!-- advertising -->
 <section class="advertising p-3">
   <div class="row justify-content-center">
@@ -112,7 +127,7 @@
             <a href="#"><img src="img/advertising/poster1.jpg" class="d-block img-fluid" alt="..."></a>
           </div>
           <div class="carousel-item">
-            <a href="#"></a><img src="img/advertising/poster7.jpg" class="d-block img-fluid" alt="..."></a>
+            <a href="#"><img src="img/advertising/poster7.jpg" class="d-block img-fluid" alt="..."></a>
           </div>
           <div class="carousel-item">
             <a href="#"><img src="img/advertising/poster8.PNG" class="d-block img-fluid" alt="..."></a>
@@ -184,13 +199,13 @@
 
 
 <!-- bestsellers -->
-<section class="bestsellers mt-5 ps-3 pe-3">
+<section class="cards-carousel mt-5 ps-3 pe-3">
   <div class="row">
     <h3 class="text-white ps-5"><span class="me-2 bi bi-star-fill" style="color: #017ecc"></span>Bestsellers</h3>
   </div>
   <div class="row justify-content-center">
       <button type="button" data-bs-target="#carousel-bestsellers" data-bs-slide="prev"
-              class="col-1 text-white carousel-control bg-transparent btn p-0 m-0 bi bi-chevron-left">
+              class="col-1 carousel-control bg-transparent btn p-0 m-0 bi bi-chevron-left">
       </button>
 
       <div id="carousel-bestsellers" class="carousel slide col" data-bs-ride="carousel" data-bs-interval="20000">
@@ -406,13 +421,297 @@
 
     </div>
     <button  type="button" data-bs-target="#carousel-bestsellers" data-bs-slide="next"
-             class="col-1 text-white bg-transparent btn carousel-control p-0 m-0 bi bi-chevron-right">
+             class="col-1 bg-transparent btn carousel-control p-0 m-0 bi bi-chevron-right">
+    </button>
+  </div>
+</section>
+
+
+<!-- advertising (wide banner) -->
+<section class="advertising-bottom p-3 m-0 mt-3 mb-3 row justify-content-center">
+  <div id="carousel-wide-advertising" class="carousel slide col-8">
+    <div class="carousel-inner justify-content-center">
+      <div class="carousel-item active">
+        <a href="#"><img src="img/advertising/wide_poster1.jpg" class="" alt="..."
+                         style="max-width: 100%; height: auto"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="#"><img src="img/advertising/wide_poster3.jpeg" class="" alt="..."
+                         style="max-width: 100%; height: auto"></a>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-wide-advertising" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel-wide-advertising" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
     </button>
   </div>
 
+  <img src="img/advertising/short_poster1.jpg" class="side-banner" alt="...">
 
 </section>
 
+
+<!-- new products -->
+<section class="cards-carousel mt-5 ps-3 pe-3">
+  <div class="row">
+    <h3 class="text-white ps-5"><span class="me-2 bi bi-" style="color: #017ecc"></span>New products</h3>
+  </div>
+  <div class="row justify-content-center">
+      <button type="button" data-bs-target="#carousel-novelties" data-bs-slide="prev"
+              class="col-1 carousel-control bg-transparent btn p-0 m-0 bi bi-chevron-left">
+      </button>
+
+      <div id="carousel-novelties" class="carousel slide col" data-bs-ride="carousel" data-bs-interval="20000">
+
+        <div class="carousel-inner mb-5">
+          <div class="carousel-item active">
+            <div class="row ps-1 pe-1">
+              <div class="simple-card col m-2 p-0">
+
+                <div class="imgBox">
+                  <a href="#"><img src="img/appliances/blender.png"
+                       alt="" class="card-image"></a>
+                </div>
+
+                <div class="contentBox">
+                  <a href="#"><h5 class="text-center mt-3">Blender</h5></a>
+                  <h2 class="price ps-2 pe-2 text-center">$ 148.<small>35</small></h2>
+                  <div class="row m-1 p-0 mt-4 ms-1 me-1">
+                    <div class="col">
+                      <a href="#" class="nav-link buy-now text-center">Buy</a>
+                    </div>
+                    <div class="col-2">
+                      <a href="#" class="card-btn nav-link bi-cart-plus-fill text-center"></a>
+                    </div>
+                    <div class="col-2">
+                      <a href="#" class="card-btn nav-link bi-star-fill text-center"></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="simple-card col m-2 p-0">
+
+                <div class="imgBox">
+                  <a href="#"><img src="img/appliances/coffee_machine.png"
+                       alt="" class="card-image"></a>
+                </div>
+
+                <div class="contentBox">
+                  <a href="#"><h5 class="text-center mt-3">Coffee machine</h5></a>
+                  <h2 class="price ps-2 pe-2 text-center">$ 148.<small>35</small></h2>
+                  <div class="row m-1 p-0 mt-4 ms-1 me-1">
+                    <div class="col">
+                      <a href="#" class="nav-link buy-now text-center">Buy</a>
+                    </div>
+                    <div class="col-2">
+                      <a href="#" class="card-btn nav-link bi-cart-plus-fill text-center"></a>
+                    </div>
+                    <div class="col-2">
+                      <a href="#" class="card-btn nav-link bi-star-fill text-center"></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="simple-card col m-2 p-0">
+
+                <div class="imgBox">
+                  <a href="#"><img src="img/appliances/conditioner.png"
+                       alt="" class="card-image"></a>
+                </div>
+
+                <div class="contentBox">
+                  <a href="#"><h5 class="text-center mt-3">Conditioner</h5></a>
+                  <h2 class="price ps-2 pe-2 text-center">$ 148.<small>35</small></h2>
+                  <div class="row m-1 p-0 mt-4 ms-1 me-1">
+                    <div class="col">
+                      <a href="#" class="nav-link buy-now text-center">Buy</a>
+                    </div>
+                    <div class="col-2">
+                      <a href="#" class="card-btn nav-link bi-cart-plus-fill text-center"></a>
+                    </div>
+                    <div class="col-2">
+                      <a href="#" class="card-btn nav-link bi-star-fill text-center"></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="simple-card col m-2 p-0">
+
+                <div class="imgBox">
+                  <a href="#"><img src="img/appliances/electric_stove.png"
+                       alt="" class="card-image"></a>
+                </div>
+
+                <div class="contentBox">
+                  <a href="#"><h5 class="text-center mt-3">Electric stove</h5></a>
+                  <h2 class="price ps-2 pe-2 text-center">$ 148.<small>35</small></h2>
+                  <div class="row m-1 p-0 mt-4 ms-1 me-1">
+                    <div class="col">
+                      <a href="#" class="nav-link buy-now text-center">Buy</a>
+                    </div>
+                    <div class="col-2">
+                      <a href="#" class="card-btn nav-link bi-cart-plus-fill text-center"></a>
+                    </div>
+                    <div class="col-2">
+                      <a href="#" class="card-btn nav-link bi-star-fill text-center"></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row ps-1 pe-1">
+              <div class="simple-card col m-2 p-0">
+
+                <div class="imgBox">
+                  <a href="#"><img src="img/appliances/fridge.png"
+                       alt="" class="card-image"></a>
+                </div>
+
+                <div class="contentBox">
+                  <a href="#"><h5 class="text-center mt-3">Fridge</h5></a>
+                  <h2 class="price ps-2 pe-2 text-center">$ 148.<small>35</small></h2>
+                  <div class="row m-1 p-0 mt-4 ms-1 me-1">
+                    <div class="col">
+                      <a href="#" class="nav-link buy-now text-center">Buy</a>
+                    </div>
+                    <div class="col-2">
+                      <a href="#" class="card-btn nav-link bi-cart-plus-fill text-center"></a>
+                    </div>
+                    <div class="col-2">
+                      <a href="#" class="card-btn nav-link bi-star-fill text-center"></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="simple-card col m-2 p-0">
+
+                <div class="imgBox">
+                  <a href="#"><img src="img/appliances/gas_stove.png"
+                       alt="" class="card-image"></a>
+                </div>
+
+                <div class="contentBox">
+                  <a href="#"><h5 class="text-center mt-3">Gas stove</h5></a>
+                  <h2 class="price ps-2 pe-2 text-center">$ 148.<small>35</small></h2>
+                  <div class="row m-1 p-0 mt-4 ms-1 me-1">
+                    <div class="col">
+                      <a href="#" class="nav-link buy-now text-center">Buy</a>
+                    </div>
+                    <div class="col-2">
+                      <a href="#" class="card-btn nav-link bi-cart-plus-fill text-center"></a>
+                    </div>
+                    <div class="col-2">
+                      <a href="#" class="card-btn nav-link bi-star-fill text-center"></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="simple-card col m-2 p-0">
+
+                <div class="imgBox">
+                  <a href="#"><img src="img/appliances/microwave.png"
+                       alt="" class="card-image"></a>
+                </div>
+
+                <div class="contentBox">
+                  <a href="#"><h5 class="text-center mt-3">Microwave</h5></a>
+                  <h2 class="price ps-2 pe-2 text-center">$ 148.<small>35</small></h2>
+                  <div class="row m-1 p-0 mt-4 ms-1 me-1">
+                    <div class="col">
+                      <a href="#" class="nav-link buy-now text-center">Buy</a>
+                    </div>
+                    <div class="col-2">
+                      <a href="#" class="card-btn nav-link bi-cart-plus-fill text-center"></a>
+                    </div>
+                    <div class="col-2">
+                      <a href="#" class="card-btn nav-link bi-star-fill text-center"></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="simple-card col m-2 p-0">
+
+                <div class="imgBox">
+                  <a href="#"><img src="img/appliances/washing_machine.png"
+                       alt="" class="card-image"></a>
+                </div>
+
+                <div class="contentBox">
+                  <a href="#"><h5 class="text-center mt-3">Washing machine</h5></a>
+                  <h2 class="price ps-2 pe-2 text-center">$ 148.<small>35</small></h2>
+                  <div class="row m-1 p-0 mt-4 ms-1 me-1">
+                    <div class="col">
+                      <a href="#" class="nav-link buy-now text-center">Buy</a>
+                    </div>
+                    <div class="col-2">
+                      <a href="#" class="card-btn nav-link bi-cart-plus-fill text-center"></a>
+                    </div>
+                    <div class="col-2">
+                      <a href="#" class="card-btn nav-link bi-star-fill text-center"></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators row">
+          <button type="button" data-bs-target="#carousel-novelties" data-bs-slide-to="0" class="carousel-indicator active"></button>
+          <button type="button" data-bs-target="#carousel-novelties" data-bs-slide-to="1" class="carousel-indicator"></button>
+        </div>
+
+    </div>
+    <button  type="button" data-bs-target="#carousel-novelties" data-bs-slide="next"
+             class="col-1 bg-transparent btn carousel-control p-0 m-0 bi bi-chevron-right">
+    </button>
+  </div>
+</section>
+
+
+<section class="advantages bg-dark bg-opacity-75">
+  <div class="list-group-horizontal text-white text-center m-0">
+    <div class="list-inline-item">
+      <span class="bi bi-gift"></span>
+      <p>Bonuses</p>
+    </div>
+    <div class="list-inline-item">
+      <span class="bi bi-truck"></span>
+      <p>Free delivery</p>
+    </div>
+    <div class="list-inline-item">
+      <span class="bi bi-gem"></span>
+      <p>Premium service</p>
+    </div>
+    <div class="list-inline-item">
+      <span class="bi bi-clock"></span>
+      <p>Work round the clock</p>
+    </div>
+    <div class="list-inline-item">
+      <span class="bi bi-shield-check"></span>
+      <p>Product warranty</p>
+    </div>
+    <div class="list-inline-item">
+      <span class="bi bi-arrow-down-up"></span>
+      <p>Return/exchange goods</p>
+    </div>
+  </div>
+</section>
 
 </body>
 </html>

@@ -14,12 +14,13 @@
   height: 472px;
   background: #191919;
   overflow: hidden;
-  border: 2px #191919 solid;
+  border: 3px #191919 solid;
   border-radius: 10px;
+  transition: 0.2s;
 }
 
 .simple-card:hover {
-  border: 2px #017ecc solid;
+  border: 3px #017ecc solid;
 }
 
 .simple-card .card-image {

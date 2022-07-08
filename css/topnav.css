@@ -1,3 +1,48 @@
+.navbar {
+  background: black;
+}
+
+.navbar-mobile {
+  display: none;
+}
+
+.t-nav {
+  border-top-width: 1px;
+  border-top-color: #017ecc;
+  border-top-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #017ecc;
+  border-bottom-style: solid;
+}
+
+.b-nav {
+  border-top-width: 1px;
+  border-top-color: #017ecc;
+  border-top-style: solid;
+}
+
+.navbar .categories {
+  border: none;
+  border-bottom: 4px solid #3c3f41;
+  border-radius: 0;
+  font-size: 1.35em;
+  color: white;
+}
+
+.categories-mobile {
+  display: none;
+}
+
+.navbar .categories:hover {
+  color: white;
+  border-bottom: 4px solid #017ecc;
+}
+
+.navbar .categories:focus {
+  color: white;
+  border-bottom: 4px solid #017ecc;
+}
+
 .navbar .search {
   background: #017ecc;
   border: none;
@@ -15,46 +60,6 @@
   color: white;
 }
 
-
-.navbar .bi-telephone-fill {
-  color: white;
-  font-size: 1.35em;
-}
-
-.navbar .categories {
-  border: none;
-  border-bottom: 4px solid #3c3f41;
-  border-radius: 0;
-  font-size: 1.35em;
-  color: white;
-}
-
-.navbar .categories:hover {
-  color: white;
-  border-bottom: 4px solid #017ecc;
-}
-
-.navbar .categories:focus {
-  color: white;
-  border-bottom: 4px solid #017ecc;
-}
-
-.navbar {
-  background: black;
-}
-
-.t-nav {
-  border-bottom-width: 1px;
-  border-bottom-color: #017ecc;
-  border-bottom-style: solid;
-}
-
-.b-nav {
-  border-top-width: 1px;
-  border-top-color: #017ecc;
-  border-top-style: solid;
-}
-
 .navbar .nav-links {
   background: #3c3f41;
 }
@@ -65,25 +70,18 @@
 
 .navbar .nav-link {
   font-size: 1.35em;
-  color: white;
+  color: #bbbcc0;
   background: none;
   border: none;
+  transition: 0.2s;
 }
 
 .navbar .nav-link:hover {
-  color: #017ecc;
+  color: white;
 }
 
 .navbar .nav-link:focus {
-  color: #017ecc;
-}
-
-.categories-mobile {
-  display: none;
-}
-
-.navbar-mobile {
-  display: none;
+  color: white;
 }
 
 @media screen and (max-width: 960px) {
@@ -97,7 +95,6 @@
 }
 
 @media screen and (max-width: 700px) {
-
   .navbar-mobile {
     display: block;
   }
@@ -105,5 +102,4 @@
   .nav-links {
     display: none;
   }
-
 }

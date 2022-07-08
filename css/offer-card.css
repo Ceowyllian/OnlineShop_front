@@ -70,6 +70,16 @@
   letter-spacing: 1px;
 }
 
+.offer-card .contentBox .row {
+  position: relative;
+  top: 55px;
+  transition: 0.2s;
+}
+
+.offer-card:hover .contentBox .row {
+  top: 0;
+}
+
 .offer-card .buy-now {
   color: #191919;
   background: #017ecc;
@@ -87,14 +97,4 @@
 
 .offer-card .card-btn:hover {
   color: #017ecc;
-}
-
-.offer-card .contentBox .row {
-  position: relative;
-  top: 55px;
-  transition: 0.2s;
-}
-
-.offer-card:hover .contentBox .row {
-  top: 0;
 }
