@@ -1,0 +1,29 @@
+.footer {
+  background: black;
+  border-top-width: 1px;
+  border-top-color: #017ecc;
+  border-top-style: solid;
+}
+
+.footer .list-group-item {
+  background: none;
+  padding: 0;
+}
+
+.footer .list-group a {
+  font-size: 1.1em;
+  color: #bbbcc0;
+  text-decoration: none;
+}
+
+.footer .list-group a:hover {
+  color: white;
+}
+
+.footer .list-group h4 {
+  color: white;
+}
+
+.footer .list-group .bi {
+  font-size: 1.7em;
+}
