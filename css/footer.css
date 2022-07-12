@@ -20,10 +20,42 @@
   color: white;
 }
 
-.footer .list-group h4 {
+.footer .social-media a {
+  font-size: 2em;
+  color: #bbbcc0;
+  text-decoration: none;
+}
+
+.footer .social-media a:hover {
   color: white;
+}
+
+.footer h4 {
+  color: white;
+  border-bottom: #7b7d80 1px solid;
+  padding-bottom: 10px;
 }
 
 .footer .list-group .bi {
   font-size: 1.7em;
 }
+
+
+.feedback, .subscribe {
+  padding: 10px 20px;
+  font-size: 1.1em;
+  background: #017ecc;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  border: #017ecc 2px solid;
+  transition: 0.2s;
+}
+
+.feedback:hover, .subscribe:hover {
+  background: none;
+}
+
+
+
+
