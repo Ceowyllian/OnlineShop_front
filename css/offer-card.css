@@ -1,7 +1,7 @@
 .offer-card {
   position: relative;
   height: 472px;
-  background: #191919;
+  background: rgba(25, 25, 25, 0.5);
   overflow: hidden;
   border-radius: 10px;
 }
@@ -22,15 +22,6 @@
 
 .offer-card:hover::before {
   top: -45%;
-}
-
-.offer-card::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  font-weight: 600;
-  font-size: 6em;
-  color: rgba(0, 0, 0, 0.1);
 }
 
 .offer-card .imgBox {
