@@ -20,16 +20,6 @@
   color: white;
 }
 
-.footer .social-media a {
-  font-size: 2em;
-  color: #bbbcc0;
-  text-decoration: none;
-}
-
-.footer .social-media a:hover {
-  color: white;
-}
-
 .footer h4 {
   color: white;
   border-bottom: #7b7d80 1px solid;
@@ -39,7 +29,6 @@
 .footer .list-group .bi {
   font-size: 1.7em;
 }
-
 
 .feedback, .subscribe {
   padding: 10px 20px;
@@ -52,10 +41,38 @@
   transition: 0.2s;
 }
 
+
 .feedback:hover, .subscribe:hover {
   background: none;
 }
 
+.footer .social-media .links {
+  background: #3c3f41;
+  border-radius: 10px;
+}
 
+.footer .social-media a {
+  font-size: 2em;
+  text-decoration: none;
+  border-radius: 12px;
+  color: #bbbcc0;
+  transition: 0.1s;
+  padding-left: 6px;
+  padding-right: 6px;
+}
 
+.footer .social-media a:hover {
+  background: white;
+}
 
+.footer .telegram:hover, .footer .twitter:hover {
+  color: #017ecc;
+}
+
+.footer .facebook:hover {
+  color: #1919d2;
+}
+
+.footer .youtube:hover {
+  color: red;
+}
