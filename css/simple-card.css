@@ -1,3 +1,16 @@
+.simple-card {
+  position: relative;
+  height: 472px;
+  background: rgba(25, 25, 25, 0.5);
+  overflow: hidden;
+  border: 3px rgba(25, 25, 25, 0.1) solid;
+  transition: 0.2s;
+}
+
+.simple-card:hover {
+  border: 3px rgba(1, 126, 204, 0.7) solid;
+}
+
 .simple-card .imgBox {
   position: relative;
   width: 100%;
@@ -6,21 +19,6 @@
   align-items: center;
   padding-top: 20px;
   z-index: 1;
-}
-
-.simple-card {
-  position: relative;
-  content: "aaaaaaaa";
-  height: 472px;
-  background: #191919;
-  overflow: hidden;
-  border: 3px #191919 solid;
-  border-radius: 10px;
-  transition: 0.2s;
-}
-
-.simple-card:hover {
-  border: 3px #017ecc solid;
 }
 
 .simple-card .card-image {
