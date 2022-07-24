@@ -24,22 +24,25 @@
 .categories-list li {
   background: none;
   text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-left: 20px;
   padding: 0;
-  margin-bottom: 4px;
-  border: none;
 }
 
 .categories-list li a {
   font-size: 1.41em;
   color: #bbbcc0;
   text-decoration: none;
-  transition: 0.1s;
+  transition: 0.2s;
   border: none;
-  border-left: hidden;
+  margin-left: 10px;
 }
 
 .categories-list li a:hover {
   color: white;
-  padding-left: 7px;
-  border-left: 5px #017ecc solid;
+}
+
+.categories-list li img {
+  height: 35px;
+  width: auto;
 }
