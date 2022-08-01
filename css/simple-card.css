@@ -5,6 +5,7 @@
   overflow: hidden;
   border: 3px rgba(25, 25, 25, 0.1) solid;
   transition: 0.2s;
+  margin: 4px;
 }
 
 .simple-card:hover {
