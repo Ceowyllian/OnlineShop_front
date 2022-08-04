@@ -33,28 +33,28 @@
 
 
 <!-- top navigation bar-->
-<header class="t-nav navbar sticky-top">
+<header class="navbar sticky-top">
   <div class="container-fluid">
-    <img class="navbar-brand p-0 m-0" src="img/brand.png" alt="" width=45>
-    <button class="btn me-3 ms-3 p-1 categories" data-bs-toggle="offcanvas" data-bs-target="#categories"
-            aria-controls="categories">
-      <span class="bi bi-grid" style="color: #017ecc"></span> Catalog
-    </button>
-    <button class="btn me-3 ms-3 p-1 categories categories-mobile" data-bs-toggle="offcanvas"
+
+    <img class="navbar-brand p-0 m-0 d-xxl-inline d-lg-inline d-none" src="img/brand.png" alt="brand" width=45>
+
+    <button class="btn me-3 ms-3 p-1 categories d-xxl-inline d-md-inline d-none" data-bs-toggle="offcanvas"
             data-bs-target="#categories"
             aria-controls="categories">
       <span class="bi bi-grid" style="color: #017ecc"></span>
+      <span class="d-xxl-inline d-lg-inline d-none">Catalog</span>
     </button>
+
     <form class="col ms-2 me-2">
       <div class="input-group">
-        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
-               placeholder="Search..." style="border-radius: 0; box-shadow: none;">
+        <input type="text" class="form-control" placeholder="Search..." style="border-radius: 0; box-shadow: none;">
         <button class="btn search me-1 ms-1 pt-0 pb-0">
           <span class="bi bi-search"></span>
         </button>
       </div>
     </form>
-    <nav class="nav-links justify-content-center m-2 pt-1 pb-1">
+
+    <nav class="nav-links justify-content-center m-2 pt-1 pb-1 d-xxl-inline d-md-inline d-none">
       <div class="d-flex">
         <a class="nav-link me-3 ms-3 bi bi-chat-dots" href="#Contacts"></a>
         <a class="nav-link me-3 ms-3 bi bi-cart" href="#Cart"></a>
@@ -62,20 +62,23 @@
         <a class="nav-link me-3 ms-3 bi bi-person" href="#Account"></a>
       </div>
     </nav>
+
   </div>
 </header>
 
-
 <!-- bottom navigation bar (mobile view)-->
-<header class="b-nav navbar navbar-mobile fixed-bottom justify-content-center">
-  <nav class="nav-links-mobile d-flex justify-content-center m-0 ms-1 me-1 p-0">
-    <a class="nav-link me-3 ms-3 bi bi-chat-dots" href="#Contacts"></a>
-    <a class="nav-link me-3 ms-3 bi bi-cart" href="#Cart"></a>
-    <a class="nav-link me-3 ms-3 bi bi-star" href="#Wishlist"></a>
-    <a class="nav-link me-3 ms-3 bi bi-person" href="#Account"></a>
+<header class="navbar fixed-bottom d-xxl-none d-md-none d-flex justify-content-center p-0">
+  <nav class="nav-links d-flex m-2">
+    <button class="btn categories d-inline-block border-0" data-bs-toggle="offcanvas" data-bs-target="#categories"
+            aria-controls="categories">
+      <span class="bi bi-grid" style="color: #017ecc"></span>
+    </button>
+    <a class="nav-link bi bi-chat-dots" href="#Contacts"></a>
+    <a class="nav-link bi bi-cart" href="#Cart"></a>
+    <a class="nav-link bi bi-star" href="#Wishlist"></a>
+    <a class="nav-link bi bi-person" href="#Account"></a>
   </nav>
 </header>
-
 
 <!-- categories - offcanvas-->
 <div class="categories-list offcanvas offcanvas-start bg-dark bg-opacity-75 w-25" data-bs-scroll="true"
