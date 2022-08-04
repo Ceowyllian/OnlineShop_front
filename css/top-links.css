@@ -3,6 +3,7 @@
   color: #bbbcc0;
   text-decoration: none;
   transition: 0.2s;
+  margin-left: 10px;
 }
 
 .top-links a:hover {
