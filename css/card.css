@@ -1,0 +1,92 @@
+.card {
+  border-radius: 0;
+  padding: 0;
+  margin: 5px;
+  width: 300px;
+}
+
+.card .card-body {
+  padding: 7px;
+}
+
+.card .card-category {
+  text-align: center;
+  font-weight: bold;
+  color: #a6a6a6;
+}
+
+.card .title-container {
+  height: 46px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.card .img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: clip;
+  height: 230px;
+}
+
+.card img {
+  padding: 7px;
+  height: 100%;
+  width: auto;
+}
+
+.card .card-footer {
+  height: 71px;
+  display: flex;
+  padding: 7px 0 7px 7px;
+}
+
+.card .price-container {
+  height: 54px;
+  margin-right: auto;
+}
+
+.card .price {
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+}
+
+.card .price small {
+  font-size: 80%;
+}
+
+.card .price s {
+  font-size: 15px;
+  color: red;
+  text-decoration: red solid line-through 1px;
+  font-weight: 400;
+}
+
+.card button {
+  border: none;
+  font-size: 22px;
+  border-radius: 7px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-right: 5px;
+}
+
+.card .btn-cart {
+  color: white;
+  background: #017ecc;
+  padding: 0 8px;
+}
+
+.card .btn-cart:hover {
+  background: #4080df;
+}
+
+.card .btn-star {
+  background: none;
+  color: #a2a2a2;
+}
+
+.card .btn-star:hover {
+  color: gold;
+}
