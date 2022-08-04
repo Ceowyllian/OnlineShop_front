@@ -1,24 +1,43 @@
 .card {
-  border-radius: 0;
+  border-radius: 6px;
   padding: 0;
-  margin: 5px;
-  width: 300px;
+  width: 270px;
+  overflow: hidden;
+}
+
+.card:hover img {
+  height: 100%;
+  transition: 0.2s;
+}
+
+.card-footer {
+  transition: 0.2s;
+}
+
+.card:hover .card-footer {
+  background: rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
 }
 
 .card .card-body {
   padding: 7px;
 }
 
-.card .card-category {
+.card-category {
   text-align: center;
   font-weight: bold;
-  color: #a6a6a6;
+  color: #868686;
 }
 
 .card .title-container {
   height: 46px;
   overflow: hidden;
   overflow-wrap: break-word;
+}
+
+.card-title {
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .card .img-box {
@@ -31,8 +50,9 @@
 
 .card img {
   padding: 7px;
-  height: 100%;
+  height: 95%;
   width: auto;
+  transition: 0.2s;
 }
 
 .card .card-footer {
@@ -58,8 +78,8 @@
 
 .card .price s {
   font-size: 15px;
-  color: red;
-  text-decoration: red solid line-through 1px;
+  color: grey;
+  text-decoration: grey solid line-through 1px;
   font-weight: 400;
 }
 
@@ -74,19 +94,66 @@
 
 .card .btn-cart {
   color: white;
-  background: #017ecc;
+  background: orangered;
   padding: 0 8px;
+  transition: 0.2s;
 }
 
 .card .btn-cart:hover {
-  background: #4080df;
+  background: #ff6b33;
+  transition: 0.2s;
+
 }
 
 .card .btn-star {
   background: none;
-  color: #a2a2a2;
+  color: #13181e;
+  transition: 0.2s;
+
 }
 
 .card .btn-star:hover {
-  color: gold;
+  color: #017ecc;
+  transition: 0.2s;
+
+}
+
+.card .pill-container {
+  position: absolute;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 6px;
+}
+
+.card .card-pill {
+  margin-top: 3px;
+  transition: 0.15s;
+  width: 13px;
+  height: 13px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: transparent;
+  display: block;
+  overflow: hidden;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card:hover .card-pill {
+  transition: 0.15s;
+  width: 75px;
+  color: white;
+}
+
+.card .sale {
+  background: #fd9601;
+}
+
+.card .new {
+  background: #00bc0a;
+}
+
+.card .delivery {
+  background: #7b7b7b;
 }
