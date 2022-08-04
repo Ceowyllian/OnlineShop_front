@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="img/bootstrap/bootstrap-icons.css" rel="stylesheet">
   <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
   <link href="css/content.css" rel="stylesheet">
   <link href="css/advertising.css" rel="stylesheet">
   <link href="css/top-links.css" rel="stylesheet">
@@ -19,16 +20,10 @@
 
 
 <!-- links above the top nav-->
-<header class="top-links container-fluid row mt-2 mb-2">
-  <div class="col-1 p-0">
-    <a class="bi bi-geo-alt mt-1 mb-1" href="#"> Delivery</a>
-  </div>
-  <div class="col-1 p-0">
-    <a class="bi bi-gift mt-1 mb-1" href="#"> Sales</a>
-  </div>
-  <div class="col-1 p-0">
-    <a class="bi bi-volume-up mt-1 mb-1" href="#"> Blog</a>
-  </div>
+<header class="top-links d-flex">
+  <a class="bi bi-geo-alt mt-1 mb-1" href="#"> Delivery</a>
+  <a class="bi bi-gift mt-1 mb-1" href="#"> Sales</a>
+  <a class="bi bi-volume-up mt-1 mb-1" href="#"> Blog</a>
 </header>
 
 
@@ -81,7 +76,7 @@
 </header>
 
 <!-- categories - offcanvas-->
-<div class="categories-list offcanvas offcanvas-start bg-dark bg-opacity-75 w-25" data-bs-scroll="true"
+<div class="categories-list offcanvas offcanvas-start bg-dark bg-opacity-75 w-100" data-bs-scroll="true"
      tabindex="-1" id="categories" aria-labelledby="categories">
   <div class="offcanvas-header bg-dark ">
     <h2 class="text-white "><span class="bi bi-grid" style="color: #017ecc"></span> Categories</h2>
@@ -89,74 +84,131 @@
       <span class="bi bi-x-lg"></span>
     </button>
   </div>
-  <div class="offcanvas-body">
-    <ul class="list-group">
-      <li class="list-group-item">
-        <img src="img/appliances/icons/blender.png" alt="blenders">
-        <a href="#">Blenders</a>
-      </li>
-      <li class="list-group-item">
-        <img src="img/appliances/icons/coffee_machine.png" alt="coffee machines">
-        <a href="#">Coffee machines</a>
-      </li>
-      <li class="list-group-item">
-        <img src="img/appliances/icons/conditioner.png" alt="conditioners">
-        <a href="#">Conditioners</a>
-      </li>
-      <li class="list-group-item">
-        <img src="img/appliances/icons/electric_stove.png" alt="electric stoves">
-        <a href="#">Electric stoves</a>
-      </li>
-      <li class="list-group-item">
-        <img src="img/appliances/icons/fridge.png" alt="fridges">
-        <a href="#">Fridges</a>
-      </li>
-      <li class="list-group-item">
-        <img src="img/appliances/icons/gas_stove.png" alt="gas stoves">
-        <a href="#">Gas stoves</a>
-      </li>
-      <li class="list-group-item">
-        <img src="img/appliances/icons/hoover.png" alt="hoovers">
-        <a href="#">Hoovers</a>
-      </li>
-      <li class="list-group-item">
-        <img src="img/appliances/icons/kettle.png" alt="kettles">
-        <a href="#">Kettles</a>
-      </li>
-      <li class="list-group-item">
-        <img src="img/appliances/icons/laptop.png" alt="laptops">
-        <a href="#">Laptops</a>
-      </li>
-      <li class="list-group-item">
-        <img src="img/appliances/icons/microwave.png" alt="microwaves">
-        <a href="#">Microwaves</a>
-      </li>
-      <li class="list-group-item">
-        <img src="img/appliances/icons/multicooker.png" alt="multicookers">
-        <a href="#">Multicookers</a>
-      </li>
-      <li class="list-group-item">
-        <img src="img/appliances/icons/robot_cleaner.png" alt="robot cleaners">
-        <a href="#">Robot cleaners</a>
-      </li>
-      <li class="list-group-item">
-        <img src="img/appliances/icons/stereo.png" alt="stereo">
-        <a href="#">Stereo</a
-        ></li>
-      <li class="list-group-item">
-        <img src="img/appliances/icons/toaster.png" alt="toasters">
-        <a href="#">Toasters</a>
-      </li>
-      <li class="list-group-item">
-        <img src="img/appliances/icons/washing_machine.png" alt="washing machines">
-        <a href="#">Washing machines</a>
-      </li>
-      <li class="list-group-item">
-        <img src="img/appliances/icons/water_heater.png" alt="water heaters">
-        <a href="#">Water heaters</a>
-      </li>
-    </ul>
-    <div class="col"></div>
+
+  <div class="offcanvas-body p-0 m-0 row">
+
+
+    <div class="h-100 col-2" style="overflow-y: scroll;">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <img src="img/appliances/icons/blender.png" alt="blenders">
+          <a href="#">Blenders</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/coffee_machine.png" alt="coffee machines">
+          <a href="#">Coffee machines</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/conditioner.png" alt="conditioners">
+          <a href="#">Conditioners</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/electric_stove.png" alt="electric stoves">
+          <a href="#">Electric stoves</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/fridge.png" alt="fridges">
+          <a href="#">Fridges</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/gas_stove.png" alt="gas stoves">
+          <a href="#">Gas stoves</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/hoover.png" alt="hoovers">
+          <a href="#">Hoovers</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/kettle.png" alt="kettles">
+          <a href="#">Kettles</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/laptop.png" alt="laptops">
+          <a href="#">Laptops</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/microwave.png" alt="microwaves">
+          <a href="#">Microwaves</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/multicooker.png" alt="multicookers">
+          <a href="#">Multicookers</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/robot_cleaner.png" alt="robot cleaners">
+          <a href="#">Robot cleaners</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/stereo.png" alt="stereo">
+          <a href="#">Stereo</a
+          ></li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/toaster.png" alt="toasters">
+          <a href="#">Toasters</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/washing_machine.png" alt="washing machines">
+          <a href="#">Washing machines</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/water_heater.png" alt="water heaters">
+          <a href="#">Water heaters</a>
+        </li>
+      </ul>
+
+    </div>
+    <div class="h-100 col text-white p-3" style="overflow-y: scroll;">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Aliquam ultrices sagittis orci a scelerisque purus semper. Sapien nec sagittis aliquam malesuada
+        bibendum arcu vitae elementum. Varius quam quisque id diam vel. Nulla facilisi etiam dignissim diam quis. Turpis
+        cursus in hac habitasse. Netus et malesuada fames ac turpis egestas integer eget. Et pharetra pharetra massa
+        massa ultricies mi. Congue eu consequat ac felis donec et odio pellentesque. Mauris sit amet massa vitae tortor
+        condimentum lacinia quis vel. Tortor id aliquet lectus proin. Donec enim diam vulputate ut pharetra sit. Pretium
+        aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Sed vulputate odio ut enim blandit. Posuere
+        urna nec tincidunt praesent semper. Et tortor at risus viverra adipiscing at in tellus integer.</p>
+      <p>Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Turpis cursus in hac habitasse platea
+        dictumst quisque sagittis. Ultricies mi quis hendrerit dolor magna eget est lorem. Vulputate eu scelerisque
+        felis imperdiet proin fermentum leo vel orci. Scelerisque felis imperdiet proin fermentum leo vel. Quis blandit
+        turpis cursus in hac habitasse platea dictumst. Et tortor at risus viverra adipiscing at in tellus. Neque
+        convallis a cras semper auctor neque vitae tempus quam. Habitasse platea dictumst quisque sagittis. Odio morbi
+        quis commodo odio aenean sed adipiscing diam. Nulla aliquet porttitor lacus luctus accumsan. Tortor consequat id
+        porta nibh venenatis. Praesent tristique magna sit amet purus gravida quis blandit turpis. A erat nam at lectus
+        urna duis convallis. Pellentesque habitant morbi tristique senectus et. Fermentum et sollicitudin ac orci
+        phasellus egestas. Amet justo donec enim diam.</p>
+      <p>Ut tellus elementum sagittis vitae. Nulla malesuada pellentesque elit eget gravida cum. Ultricies tristique
+        nulla aliquet enim tortor at auctor urna nunc. Aliquet eget sit amet tellus cras adipiscing enim eu. Consectetur
+        libero id faucibus nisl tincidunt eget nullam. Pharetra diam sit amet nisl suscipit adipiscing. Laoreet
+        suspendisse interdum consectetur libero. Rutrum tellus pellentesque eu tincidunt. Augue lacus viverra vitae
+        congue eu consequat ac. Velit scelerisque in dictum non consectetur a erat.</p>
+      <p>Non tellus orci ac auctor augue. Congue mauris rhoncus aenean vel elit scelerisque mauris. Lobortis elementum
+        nibh tellus molestie nunc non blandit massa enim. Diam quis enim lobortis scelerisque fermentum dui faucibus. A
+        iaculis at erat pellentesque adipiscing commodo elit at imperdiet. Gravida in fermentum et sollicitudin ac. Ut
+        tristique et egestas quis. Arcu risus quis varius quam quisque. Sit amet purus gravida quis blandit. Nec nam
+        aliquam sem et tortor. Est velit egestas dui id ornare arcu odio ut sem.</p>
+      <p>Pulvinar pellentesque habitant morbi tristique senectus. Dictumst vestibulum rhoncus est pellentesque elit
+        ullamcorper dignissim. Aliquam eleifend mi in nulla posuere sollicitudin. Urna neque viverra justo nec ultrices
+        dui. Tempus egestas sed sed risus pretium quam vulputate. At varius vel pharetra vel turpis nunc eget.
+        Pellentesque dignissim enim sit amet venenatis urna cursus. Leo a diam sollicitudin tempor id eu nisl nunc mi.
+        Sollicitudin ac orci phasellus egestas tellus rutrum. Mollis aliquam ut porttitor leo a. Diam vel quam elementum
+        pulvinar. Enim diam vulputate ut pharetra sit amet aliquam. Sodales ut etiam sit amet nisl purus. Ornare aenean
+        euismod elementum nisi quis eleifend.</p>
+      <p>Sit amet mauris commodo quis. Cursus vitae congue mauris rhoncus. Blandit turpis cursus in hac habitasse platea
+        dictumst quisque sagittis. Euismod lacinia at quis risus sed. Vel quam elementum pulvinar etiam. Cursus mattis
+        molestie a iaculis at erat pellentesque adipiscing. Sed libero enim sed faucibus turpis. Suspendisse sed nisi
+        lacus sed viverra tellus in hac. Enim facilisis gravida neque convallis a cras semper. Magna sit amet purus
+        gravida quis blandit turpis cursus in. Blandit libero volutpat sed cras. Tristique sollicitudin nibh sit amet.
+        Non enim praesent elementum facilisis leo vel. A scelerisque purus semper eget duis at tellus. Velit dignissim
+        sodales ut eu sem integer vitae justo. Pretium lectus quam id leo in vitae. Elit scelerisque mauris pellentesque
+        pulvinar pellentesque habitant morbi. Lectus magna fringilla urna porttitor rhoncus.</p>
+      <p>Pharetra magna ac placerat vestibulum lectus mauris ultrices. Velit ut tortor pretium viverra suspendisse
+        potenti nullam ac. Accumsan sit amet nulla facilisi morbi tempus iaculis urna id. Accumsan lacus vel facilisis
+        volutpat est velit egestas dui id. Laoreet id donec ultrices tincidunt arcu non sodales. Ac auctor augue mauris
+        augue neque gravida in fermentum et. Ornare suspendisse sed nisi lacus. Proin sagittis nisl rhoncus mattis
+        rhoncus. Sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec. Gravida neque convallis a cras
+        semper auctor neque vitae.</p>
+    </div>
+
+
   </div>
 </div>
 
