@@ -19,7 +19,7 @@
 <body>
 
 
-<!-- links above the top nav-->
+<!-- links above the top nav -->
 <header class="top-links d-flex">
   <a class="bi bi-geo-alt mt-1 mb-1" href="#"> Delivery</a>
   <a class="bi bi-gift mt-1 mb-1" href="#"> Sales</a>
@@ -27,12 +27,10 @@
 </header>
 
 
-<!-- top navigation bar-->
+<!-- top and bottom navigation -->
 <header class="navbar sticky-top">
   <div class="container-fluid">
-
     <img class="navbar-brand p-0 m-0 d-xxl-inline d-lg-inline d-none" src="img/brand.png" alt="brand" width=45>
-
     <button class="btn me-3 ms-3 p-1 categories d-xxl-inline d-md-inline d-none" data-bs-toggle="offcanvas"
             data-bs-target="#categories"
             aria-controls="categories">
@@ -48,26 +46,20 @@
         </button>
       </div>
     </form>
-
     <nav class="nav-links justify-content-center m-2 pt-1 pb-1 d-xxl-inline d-md-inline d-none">
-      <div class="d-flex">
-        <a class="nav-link me-3 ms-3 bi bi-chat-dots" href="#Contacts"></a>
-        <a class="nav-link me-3 ms-3 bi bi-cart" href="#Cart"></a>
-        <a class="nav-link me-3 ms-3 bi bi-star" href="#Wishlist"></a>
-        <a class="nav-link me-3 ms-3 bi bi-person" href="#Account"></a>
-      </div>
+      <a class="nav-link me-3 ms-3 bi bi-chat-dots" href="#Contacts"></a>
+      <a class="nav-link me-3 ms-3 bi bi-cart" href="#Cart"></a>
+      <a class="nav-link me-3 ms-3 bi bi-star" href="#Wishlist"></a>
+      <a class="nav-link me-3 ms-3 bi bi-person" href="#Account"></a>
     </nav>
-
   </div>
 </header>
 
-<!-- bottom navigation bar (mobile view)-->
 <header class="navbar fixed-bottom d-xxl-none d-md-none d-flex justify-content-center p-0">
-  <nav class="nav-links d-flex m-2">
-    <button class="btn categories d-inline-block border-0" data-bs-toggle="offcanvas" data-bs-target="#categories"
-            aria-controls="categories">
-      <span class="bi bi-grid" style="color: #017ecc"></span>
-    </button>
+  <nav class="nav-links d-flex justify-content-evenly w-75 d-flex">
+    <a class="bi bi-grid nav-link" style="color: #017ecc; cursor: pointer;" data-bs-toggle="offcanvas"
+       data-bs-target="#categories"
+       aria-controls="categories"></a>
     <a class="nav-link bi bi-chat-dots" href="#Contacts"></a>
     <a class="nav-link bi bi-cart" href="#Cart"></a>
     <a class="nav-link bi bi-star" href="#Wishlist"></a>
@@ -75,8 +67,9 @@
   </nav>
 </header>
 
-<!-- categories - offcanvas-->
-<div class="categories-list offcanvas offcanvas-start bg-dark bg-opacity-75 w-100" data-bs-scroll="false"
+
+<!-- side navigation (offcanvas) -->
+<div class="categories-list offcanvas offcanvas-start  bg-dark bg-opacity-75 w-100" data-bs-scroll="false"
      tabindex="-1" id="categories" aria-labelledby="categories">
   <div class="offcanvas-header bg-dark p-2">
     <h2 class="text-white "><span class="bi bi-grid" style="color: #017ecc"></span> Categories</h2>
@@ -84,11 +77,8 @@
       <span class="bi bi-x-lg"></span>
     </button>
   </div>
-
-  <div class="offcanvas-body p-0 m-0 row">
-
-
-    <div class="h-100 col-2" style="overflow-y: scroll;">
+  <div class="offcanvas-body p-0 m-0 row offcanvas-md">
+    <div class="h-100" style="overflow-y: scroll; width: fit-content;">
       <ul class="list-group">
         <li class="list-group-item">
           <img src="img/appliances/icons/blender.png" alt="blenders">
@@ -155,7 +145,6 @@
           <a href="#">Water heaters</a>
         </li>
       </ul>
-
     </div>
     <div class="h-100 col text-white p-3" style="overflow-y: scroll;">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -207,13 +196,82 @@
         rhoncus. Sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec. Gravida neque convallis a cras
         semper auctor neque vitae.</p>
     </div>
+  </div>
 
-
+  <div class="offcanvas-body p-0 m-0 d-xxl-none d-md-none d-block">
+    <div class="h-100 ms-2" style="">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <img src="img/appliances/icons/blender.png" alt="blenders">
+          <a href="#">Blenders</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/coffee_machine.png" alt="coffee machines">
+          <a href="#">Coffee machines</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/conditioner.png" alt="conditioners">
+          <a href="#">Conditioners</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/electric_stove.png" alt="electric stoves">
+          <a href="#">Electric stoves</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/fridge.png" alt="fridges">
+          <a href="#">Fridges</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/gas_stove.png" alt="gas stoves">
+          <a href="#">Gas stoves</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/hoover.png" alt="hoovers">
+          <a href="#">Hoovers</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/kettle.png" alt="kettles">
+          <a href="#">Kettles</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/laptop.png" alt="laptops">
+          <a href="#">Laptops</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/microwave.png" alt="microwaves">
+          <a href="#">Microwaves</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/multicooker.png" alt="multicookers">
+          <a href="#">Multicookers</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/robot_cleaner.png" alt="robot cleaners">
+          <a href="#">Robot cleaners</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/stereo.png" alt="stereo">
+          <a href="#">Stereo</a
+          ></li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/toaster.png" alt="toasters">
+          <a href="#">Toasters</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/washing_machine.png" alt="washing machines">
+          <a href="#">Washing machines</a>
+        </li>
+        <li class="list-group-item">
+          <img src="img/appliances/icons/water_heater.png" alt="water heaters">
+          <a href="#">Water heaters</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
 
 
-<!-- bestsellers-->
+<!-- bestsellers -->
 <section class="mt-5 container-fluid">
   <h4 class="p-0 mb-3 text-white text-center">Bestsellsers</h4>
   <div class="row justify-content-center ps-1 pe-1 gap-xxl-3 gap-lg-3 gap-2">
@@ -307,9 +365,6 @@
             <span class="price">
               $ 145.<small>35</small>
             </span> <br>
-          <span class="price">
-              <s>$ 160.<small>50</small></s>
-            </span>
         </div>
         <button class="bi bi-cart-fill btn-cart"></button>
         <button class="bi bi-star-fill btn-star"></button>
@@ -372,9 +427,6 @@
             <span class="price">
               $ 145.<small>35</small>
             </span> <br>
-          <span class="price">
-              <s>$ 160.<small>50</small></s>
-            </span>
         </div>
         <button class="bi bi-cart-fill btn-cart"></button>
         <button class="bi bi-star-fill btn-star"></button>
@@ -404,9 +456,6 @@
             <span class="price">
               $ 145.<small>35</small>
             </span> <br>
-          <span class="price">
-              <s>$ 160.<small>50</small></s>
-            </span>
         </div>
         <button class="bi bi-cart-fill btn-cart"></button>
         <button class="bi bi-star-fill btn-star"></button>
@@ -437,9 +486,6 @@
             <span class="price">
               $ 145.<small>35</small>
             </span> <br>
-          <span class="price">
-              <s>$ 160.<small>50</small></s>
-            </span>
         </div>
         <button class="bi bi-cart-fill btn-cart"></button>
         <button class="bi bi-star-fill btn-star"></button>
@@ -483,7 +529,7 @@
 </section>
 
 
-<!-- advertising (wide banner)-->
+<!-- advertising (wide banner) -->
 <section class="advertising-bottom p-3 m-0 mt-3 mb-3 row justify-content-center">
   <div id="carousel-wide-advertising" class="carousel slide col-9">
     <div class="carousel-inner justify-content-center">
@@ -511,7 +557,7 @@
 </section>
 
 
-<!-- new products-->
+<!-- new products -->
 <section class="mt-5 container-fluid">
   <h4 class="p-0 mb-3 text-white text-center">New products</h4>
   <div class="row justify-content-center ps-1 pe-1 gap-xxl-3 gap-lg-3 gap-2">
@@ -572,9 +618,6 @@
             <span class="price">
               $ 145.<small>35</small>
             </span> <br>
-          <span class="price">
-              <s>$ 160.<small>50</small></s>
-            </span>
         </div>
         <button class="bi bi-cart-fill btn-cart"></button>
         <button class="bi bi-star-fill btn-star"></button>
@@ -604,9 +647,7 @@
             <span class="price">
               $ 145.<small>35</small>
             </span> <br>
-          <span class="price">
-              <s>$ 160.<small>50</small></s>
-            </span>
+
         </div>
         <button class="bi bi-cart-fill btn-cart"></button>
         <button class="bi bi-star-fill btn-star"></button>
@@ -624,10 +665,10 @@
       </a>
 
       <div class="card-body">
-        <small class="card-category">Xiaomi Mi Robot Vaccum-Mop 2 EU</small>
+        <small class="card-category">Robot cleaner</small>
 
         <div class="title-container">
-          <a href="#" class="card-title">BEKO RCNA366E35XB</a>
+          <a href="#" class="card-title">Xiaomi Mi Robot Vaccum-Mop 2 EU</a>
         </div>
 
       </div>
@@ -669,9 +710,6 @@
             <span class="price">
               $ 145.<small>35</small>
             </span> <br>
-          <span class="price">
-              <s>$ 160.<small>50</small></s>
-            </span>
         </div>
         <button class="bi bi-cart-fill btn-cart"></button>
         <button class="bi bi-star-fill btn-star"></button>
@@ -734,9 +772,6 @@
             <span class="price">
               $ 145.<small>35</small>
             </span> <br>
-          <span class="price">
-              <s>$ 160.<small>50</small></s>
-            </span>
         </div>
         <button class="bi bi-cart-fill btn-cart"></button>
         <button class="bi bi-star-fill btn-star"></button>
@@ -780,8 +815,8 @@
 </section>
 
 
-<!-- advantages-->
-<section class="advantages container-fluid p-0 m-0 mt-4 bg-dark bg-opacity-50">
+<!-- advantages -->
+<section class="advantages container-fluid p-0 m-0 mt-4">
   <div class="row row-cols-xxl-6 row-cols-lg-3 row-cols-md-3 row-cols-sm-2 row-cols-1 text-white justify-content-center
               p-0 pt-3 pb-3 m-0 g-xxl-1 g-3">
     <p class="col">
@@ -812,7 +847,7 @@
 </section>
 
 
-<!-- footer-->
+<!-- footer -->
 <footer class="footer container-fluid">
   <div class="row row-cols-xxl-4  row-cols-sm-2 row-cols-1 ps-5 pe-5 justify-content-start ">
 
