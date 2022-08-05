@@ -1,11 +1,21 @@
-.advantages .list-inline-item {
-  font-size: 1.4em;
-  text-align: center;
-  margin-left: 30px;
-  margin-right: 30px;
+.advantages {
+ border-top: 1px solid #017ecc;
 }
 
-.advantages .list-inline-item span {
+.advantages .col {
+  text-align: center;
+}
+
+.advantages .col span {
+  display: block;
+}
+
+.advantages .bi {
   font-size: 2em;
   color: #017ecc;
+}
+
+.advantages .advantage {
+  font-size: 1.4em;
+  color: white;
 }
