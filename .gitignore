@@ -1,2 +1,9 @@
 /js/bootstrap/
 /css/bootstrap/
+/.idea/.gitignore
+/.idea/LearningBootstrap.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml
