@@ -1,25 +1,17 @@
-# OnlineShop_front
+# Online Shop Layout
 
-Layout (prototype) of an online store.
+![HTML](https://img.shields.io/badge/HTML-239120?logo=html5&logoColor=white&color=red&style=flat-square)
+![CSS](https://img.shields.io/badge/CSS-239120?logo=css3&logoColor=white&color=blue&style=flat-square)
+![JS](https://img.shields.io/badge/JS-F7DF1E?logo=JavaScript&logoColor=white&style=flat-square)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.2.3-%23563D7C.svg?logo=bootstrap&logoColor=white&style=flat-square)
 
-Bootstrap version: `v5.2.0`
+A prototype of the main page of the online store, made using Bootstrap.
 
-During development, a locally stored copy of the Bootstrap library is used. In an HTML file, this looks like:
+[//]: # (This project on the GitHub pages.)
 
-```html
+---
 
-<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
-...
-<script src="js/bootstrap/bootstrap.min.js"></script>
-```
-
-If you download this project, you should include the following links instead:
-
-```html
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet">
-...
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-```
+## Dependencies
+- [Bootstrap 5.2.3](https://blog.getbootstrap.com/2022/11/22/bootstrap-5-2-3/)
+- [Bootstrap-icons 1.10.3](https://www.npmjs.com/package/bootstrap-icons)
 
