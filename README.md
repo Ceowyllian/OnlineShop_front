@@ -7,7 +7,7 @@
 
 A prototype of the main page of the online store, made using Bootstrap.
 
-[//]: # (This project on the GitHub pages.)
+[This project on the GitHub pages.](https://ceowyllian.github.io/OnlineShop_front/)
 
 ---
 
